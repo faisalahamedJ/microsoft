@@ -237,6 +237,12 @@ ul{
 
 
 @media (max-width: 550px){
+
+   .container{
+       font-size : 12px;
+
+}
+
     .showcase{
         height: 350px;
     }
