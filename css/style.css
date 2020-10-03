@@ -211,7 +211,12 @@ ul{
     display: flex;
     flex-wrap: wrap;
 }
+@media(min-width: 800px){
+ .fa-bars{
+    display : none;
+}
 
+}
 
 @media (max-width: 800px){
     .showcase{
