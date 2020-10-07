@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -54,17 +55,17 @@
             </div>
         </header>
 
-        <div class="showcase">
-            <div class="showcase-content">
-                <h2>Surface Deal</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil delectus est officiis ut architecto, minus porro reiciendis id </p>
-            <a href="" class="btn">Learn more <i class="fas fa-chevron-right"></i></a>
+         <div class="showcase">
+            <div class="content" data-aos="fade-left">
+                <h2>Showcase</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn">Learn more <i class="fas fa-chevron-right"></i></a>
             </div>
         </div>
 
 
         <section class="news-container">
-                <div class="img-card">
+                <div class="img-card" data-aos="fade-right">
                     <img src="images/playstation.jpg" alt="">
                     <h3>New Surface</h3>
 
@@ -72,7 +73,7 @@
                     <a href="" class="btn">Learn more <i class="fas fa-chevron-right"></i></a>
                 </div>
 
-                <div class="img-card">
+                <div class="img-card" data-aos="fade-down">
                     <img src="images/x-box.jpg" alt="">
                     <h3>New Surface</h3>
 
@@ -80,7 +81,7 @@
                     <a href="" class="btn">Learn more <i class="fas fa-chevron-right"></i></a>
                 </div>
 
-                <div class="img-card">
+                <div class="img-card" data-aos="fade-up">
                     <img src="images/apple.jpg" alt="">
                     <h3>New Surface</h3>
 
@@ -88,7 +89,7 @@
                     <a href="" class="btn">Learn more <i class="fas fa-chevron-right"></i></a>
                 </div>
 
-                <div class="img-card">
+                <div class="img-card" data-aos="fade-left">
                     <img src="images/pexels-samer-daboul-2142424.jpg" alt="">
                     <h3>New Surface</h3>
 
@@ -97,16 +98,16 @@
                 </div>
             </section>
 
-            <section class="icon-section">
-                <div><i class="fab fa-xbox"> </i><span> Buy Xbox Games</span></div>
-                <div><i class="fab fa-windows"></i><span> Shop for Window 10</span></div>
-                <div><i class="fab fa-internet-explorer"></i><span>Explore Surface device</span></div>
-                <div><i class="fab fa-microsoft"></i><span>Choose Your Microsoft 365</span></div>
+             <section class="icon-section">
+                <div data-aos="fade-right"><i class="fab fa-xbox"> </i><span> Buy Xbox Games</span></div>
+                <div data-aos="fade-up"><i class="fab fa-windows"></i><span> Shop for Window 10</span></div>
+                <div data-aos="fade-down"><i class="fab fa-internet-explorer"></i><span>Explore Surface device</span></div>
+                <div data-aos="fade-left"><i class="fab fa-microsoft"></i><span>Choose Your Microsoft 365</span></div>
             </section>
 
 
             <section class="showcase-2">
-                <div class="content">
+                <div class="content" data-aos="fade-right">
                     <h2>Surface Pro X</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a href="" class="btn">Shop Now <i class="fas fa-chevron-right"></i></a>
@@ -226,10 +227,15 @@
 
 
     <script>
+             AOS.init({
+            easing: 'ease',
+            duration: 1000,
+        });
     document.querySelector(".bar").addEventListener('click', ()=> document.querySelector('.nav-item').classList.toggle('show'));
 
 
 </script>
     <script src="https://kit.fontawesome.com/549cf28375.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
